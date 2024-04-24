@@ -13,7 +13,7 @@ function Login() {
     // console.log(email, password);
 
     if (email === "admin@admin.com" && password === "admin") {
-      login({email,password})
+      login({email,password}) //! setUser ile user bilgisi güncelleniyor!!
     } else {
       let errorMessage = "";
       if (email !== "admin@admin.com") {

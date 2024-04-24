@@ -2,6 +2,7 @@ import React, {  useState } from "react";
 import logo from "../assets/logo.jpg";
 import { NavLink, useLocation } from "react-router-dom";
 import { closeNavbar, logoutIcon, openNavbar } from "../helpers/icons";
+import { useLoginContext } from "../context/LoginProvider";
 
 const navigation = [
   {
@@ -20,8 +21,7 @@ const navigation = [
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
-  const location = useLocation();
-  console.log(location);
+const {logout} = useLoginContext()
   return (
     <nav className="bg-navbarColor md:text-sm">
       <div className="gap-x-14 items-center max-w-screen-xl mx-auto px-4 md:flex md:px-8">
@@ -50,9 +50,7 @@ const Navbar = () => {
               >
                 <NavLink
                   to={item.path}
-                  className={`block hover:bg-main rounded-full py-2 px-4 hover:text-white ${
-                    location.pathname === item.path ? "underline scale-125" : ""
-                  } `}
+                  className={`block hover:bg-main rounded-full py-2 px-4 hover:text-white`}
                 >
                   {item.title}
                 </NavLink>
@@ -61,7 +59,8 @@ const Navbar = () => {
           </ul>
           <div className="flex-1 gap-x-6 items-center justify-end mt-6 space-y-6 md:flex md:space-y-0 md:mt-0">
             <NavLink
-              // to="/"
+              // to="/" //Buna gerek kalmadı onClikten dolayı
+              onClick={() => logout()}
               className="flex items-center justify-center gap-x-1 py-2 px-4 font-medium text-gray-700 hover:bg-main hover:text-white active:bg-gray-900 rounded-full md:inline-flex"
             >
               Logout {logoutIcon}
