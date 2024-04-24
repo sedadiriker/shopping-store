@@ -40,3 +40,59 @@ export const stats = [
         "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati ",
     },
   ];
+
+  export const team = [
+    {
+      avatar: "https://robohash.org/Terrill.png?set=set4",
+      name: "Emily Rodriguez",
+      title: "Coordinator & Full Stack Developer",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
+      linkedin: "www.google.com",
+      twitter: "www.google.com",
+    },
+    {
+      avatar:
+        "https://robohash.org/Terry.png?set=set4",
+      name: "Alexander Schmidt",
+      title: "Director",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
+      linkedin: "www.google.com",
+      twitter: "www.google.com",
+    },
+    {
+      avatar:
+        "https://robohash.org/Sheldon.png?set=set4",
+      name: "Sofia Novak",
+      title: "Full Stack Developer",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
+      linkedin: "www.google.com",
+      twitter: "www.google.com",
+    },
+    {
+      avatar:
+        "https://robohash.org/Miles.png?set=set4",
+      name: "Javier Fernandez",
+      title: "Full Stack Developer",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
+      linkedin: "www.google.com",
+      twitter: "www.google.com",
+    },
+    {
+      avatar:
+        "https://robohash.org/Mavis.png?set=set4",
+      name: "Elena Petrov",
+      title: "Full Stack Developer",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
+      linkedin: "www.google.com",
+      twitter: "www.google.com",
+    },
+    {
+      avatar:
+        "https://robohash.org/Alison.png?set=set4",
+      name: "Diego Silva",
+      title: "Full Stack Developer",
+      desc: "Lorem Ipsum is simply dummy text of the printing and typesettin industry.",
+      linkedin: "www.google.com",
+      twitter: "www.google.com",
+    },
+  ];

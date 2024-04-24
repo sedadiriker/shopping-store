@@ -8,7 +8,8 @@ const ProductCard = ({ product }) => {
   return (
     <>
       <div
-        className="cursor-pointer"
+  className="relative cursor-pointer p-2 border after:w-0  hover:after:w-full after:absolute after:top-0 after:left-0 after:bg-main after:h-[3px] after:content-'' hover:shadow-2xl after:transition-all"
+
         onClick={() => navigate(`${id}`, { state: product })}
       >
         <div className="w-full rounded-md bg-gray-200 hover:opacity-75 lg:h-80">
